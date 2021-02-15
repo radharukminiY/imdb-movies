@@ -1,0 +1,10 @@
+  header{
+  background-image: url("bg1.jpeg");
+  background-size: cover;
+  background-opacity: 0.4;
+  height: 100px;
+  color:#fff;
+  font-size: 40px;
+  padding-top: 40px;
+  font-style: oblique;
+}

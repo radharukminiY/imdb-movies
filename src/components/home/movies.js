@@ -19,80 +19,54 @@ export class Movie extends Component {
                 <div className="col-md-4 card card-body">
                     <img src={movie.Poster} className="thumbnail" alt="Poster" />
                 </div>
-                <div className="col-md-8">
+                <div className="col-md-8" style={{float:"right"}}>
                     <h2 className="mb-4">{movie.Title}</h2>
                     <ul className="list-group">
                         <li className="list-group-item">
-                            <strong>
-                                Genre:
-                            </strong> {movie.Genre}
+                            <strong>Genre:</strong> {movie.Genre}
                         </li>
-
                         <li className="list-group-item">
-                            <strong>
-                                Relesed:
-                            </strong> {movie.Released}
+                            <strong> Relesed:</strong> {movie.Released}
                         </li>
-
                         <li className="list-group-item">
-                            <strong>
-                                Rated:
-                            </strong> {movie.Rated}
+                            <strong> Rated:</strong> {movie.Rated}
                         </li>
-
                         <li className="list-group-item">
-                            <strong>
-                                IMDB Rating:
-                            </strong> {movie.imdbRating}
+                          <strong> IMDB Rating: </strong> {movie.imdbRating}
                         </li>
-
                         <li className="list-group-item">
-                            <strong>
-                                Director:
-                            </strong> {movie.Director}
+                            <strong> Director:  </strong> {movie.Director}
                         </li>
-
                         <li className="list-group-item">
-                            <strong>
-                                Writer:
-                            </strong> {movie.Writer}
+                            <strong> Writer:</strong> {movie.Writer}
                         </li>
-
                         <li className="list-group-item">
-                            <strong>
-                                Actors:
-                            </strong> {movie.Actors}
+                            <strong>Actors:</strong> {movie.Actors}
                         </li>
-                    </ul>
-                </div>
-            </div>
+                       </ul>
+                      </div>
+                       </div>
             <div className="row">
-                <div className="card card-body bg-dark my-5 text-light">
-                    <div className="col-md-12">
-                        <h3>About</h3>
-                        {movie.Plot}
-                        <hr />
-                        <a href={`http://www.imdb.com/title/` + movie.imdbID}
-                        rel="noopener noreferrer"
-                        className="btn btn-primary">
-                            View in IDMB
-                        </a>
-
-                        <Link
-                        to="/"
-                        className="btn btn-default text-light">
-                            Go Back To Search
-                        </Link>
-                    </div>
-                </div>
-            </div>
+            <div className="card card-body bg-dark my-5 text-light">
+            <div className="col-md-12">
+            <h3>About</h3>
+           {movie.Plot}
+            <hr />
+            <a href={`http://www.imdb.com/title/` + movie.imdbID}
+            rel="noopener noreferrer"
+            className="btn btn-primary">
+            View in IDMB </a>
+  <Link to="/" className="btn btn-default text-light">Go Back To Search</Link>
+          </div>
+          </div>
+          </div>
         </div>)
 
         let content = loading ? <Loader /> : movieInfo;
         return (
-            <div>
-                {content}
-            </div>
+          <div>
+          {content}
+          </div>
         )
     }
 }

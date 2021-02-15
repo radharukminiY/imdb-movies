@@ -9,7 +9,7 @@ export class MoviesContainer extends Component {
 
         content = movies.Response === 'True' ? movies.Search.map((movie, index) => <MovieCards key={index} movie={movie} />) : null ;
         return (
-            <div className="row">
+            <div className="row" style={{float:"right"}}>
                 {content}
             </div>
         )

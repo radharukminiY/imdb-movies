@@ -8,6 +8,7 @@
     "@testing-library/user-event": "^12.1.10",
     "axios": "^0.21.1",
     "browserslist": "^4.16.3",
+    "cors": "^2.8.5",
     "imdb-api": "^4.4.1",
     "react": "^17.0.1",
     "react-app-polyfill": "^2.0.0",
@@ -23,11 +24,10 @@
     "web-vitals": "^1.0.1"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "set PORT=https://moviesdb-redux.herokuapp.com/ && react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "start": "set PORT=https://moviesdb-redux.herokuapp.com/ && react-scripts start"
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": [

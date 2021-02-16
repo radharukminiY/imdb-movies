@@ -6,12 +6,10 @@ export class MoviesContainer extends Component {
     render() {
         const {movies} = this.props;
         let content = '';
-
         content = movies.Response === 'True' ? movies.Search.map((movie, index) => <MovieCards key={index} movie={movie} />) : null ;
         return (
-            <div className="row" style={{float:"right"}}>
-                {content}
-            </div>
+        <div className="row" >
+        {content}</div>
         )
     }
 }

@@ -1,4 +1,19 @@
-.col-md-3{
-  width:25%;
-  float: left;
+.container{
+  background-color: #ffffe6;
+}
+.col-md-8
+{
+  background-color: #e6e6ff;
+}
+.thumbnail{
+width: 450px;
+}
+.col-md-5{
+background: #cfc9c9;
+}
+.about{
+  background-color:#fff;
+}
+.back{
+  background: #ffe6f2;
 }

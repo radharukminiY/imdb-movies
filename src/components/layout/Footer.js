@@ -5,7 +5,7 @@ const Footer =(props) => {
         <footer>
             <hr/>
             <center>
-                 <a href="http://www.omdbapi.com/"> &copy; IMDB </a>
+                 <a href="https://www.omdbapi.com/"> &copy; IMDB </a>
             </center>
         </footer>
     )
